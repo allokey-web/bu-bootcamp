@@ -1,4 +1,3 @@
-cat > module3/ContactTest.java <<'EOF'
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -48,4 +47,3 @@ public class ContactTest {
                 ada.toString());
     }
 }
-EOF
