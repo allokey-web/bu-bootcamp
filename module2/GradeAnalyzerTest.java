@@ -55,6 +55,8 @@ public class GradeAnalyzerTest {
                         Integer.MAX_VALUE));
 
         assertEquals(2147483647.0,
-                GradeAnalyzer.calculateAverage(scores), 0.001);
+                GradeAnalyzer.calculateAverage(scores));
     }
+
+    
 }
