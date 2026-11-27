@@ -1,3 +1,4 @@
+cat > module3/ContactTest.java <<'EOF'
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -39,4 +40,12 @@ public class ContactTest {
     void toString_containsPhone() {
         assertTrue(alan.toString().contains("555-0001"));
     }
+
+    // Additional test
+    @Test
+    void toString_returnsExactContactFormat() {
+        assertEquals("Ada Lovelace | +1 617 555 0101",
+                ada.toString());
+    }
 }
+EOF
